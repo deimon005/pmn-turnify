@@ -1,0 +1,39 @@
+.worker-dashboard {
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .worker-dashboard header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logout-btn {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+  .worker-nav {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .worker-nav a {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background: #ecf0f1;
+    color: #333;
+  }
+  .worker-nav a.active {
+    background: #3498db;
+    color: #fff;
+  }
+  .worker-main {
+    margin-top: 1.5rem;
+  }
+  

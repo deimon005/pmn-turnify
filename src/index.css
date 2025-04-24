@@ -1,59 +1,7 @@
-.dashboard-container {
-  padding: 20px;
-  max-width: 800px;
-  margin: 0 auto;
+a {
+  text-decoration: none;
+  color: inherit;
 }
-
-.button-group {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin: 20px 0;
-}
-
-.calendar-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 5px;
-}
-
-.calendar-day {
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: center;
-  min-height: 50px;
-}
-
-.overtime-grid {
-  display: grid;
-  gap: 10px;
-}
-
-.overtime-day {
-  padding: 15px;
-  border: 1px solid #ddd;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.form-container {
-  max-width: 500px;
-  margin: 20px auto;
-  padding: 20px;
-}
-
-.form-buttons {
-  display: flex;
-  gap: 10px;
-  margin-top: 15px;
-}
-
-.request-button {
-  background: #28a745;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 3px;
+button {
   cursor: pointer;
 }

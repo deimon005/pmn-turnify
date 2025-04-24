@@ -1,31 +1,17 @@
-import { useNavigate } from 'react-router-dom'
-
-const RequestPermissionPage = () => {
-  const navigate = useNavigate()
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // Lógica de envío (simulación)
-    navigate(-1) // Regresa al dashboard
-  }
-
+export default function RequestPermissionPage() {
   return (
-    <div className="form-container">
+    <div className="form-container card">
       <h1>Solicitar Permiso</h1>
-      <form onSubmit={handleSubmit}>
-        <input type="date" required />
-        <textarea 
-          placeholder="Motivo del permiso"
-          rows="4"
-          required
-        />
+      <form>
+        <label>Fecha: <input type="date" required /></label>
+        <label>Motivo:
+          <textarea rows={4} placeholder="Describe tu motivo" required />
+        </label>
         <div className="form-buttons">
-          <button type="submit">Enviar</button>
-          <button type="button" onClick={() => navigate(-1)}>Cancelar</button>
+          <button type="submit" className="btn-primary">Enviar</button>
+          <button type="button" className="btn-secondary">Cancelar</button>
         </div>
       </form>
     </div>
   )
 }
-
-export default RequestPermissionPage

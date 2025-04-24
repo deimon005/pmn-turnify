@@ -1,0 +1,25 @@
+.overtime-container {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  .overtime-list {
+    list-style: none;
+    padding: 0;
+  }
+  .overtime-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    border-bottom: 1px solid #ddd;
+  }
+  .overtime-item button {
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+  }
+  

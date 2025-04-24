@@ -1,0 +1,31 @@
+.form-container {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: auto;
+  }
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .form-container input,
+  .form-container textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .form-buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .form-buttons button {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+  
