@@ -1,5 +1,7 @@
 import React from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
+
+// Páginas generales
 import LoginPage from './pages/LoginPage'
 
 // Worker
@@ -16,9 +18,10 @@ import SupervisorEmployeeCalendar from './pages/supervisor/SupervisorEmployeeCal
 import SupervisorPublishOvertime from './pages/supervisor/SupervisorPublishOvertime'
 import SupervisorOvertimeApplicants from './pages/supervisor/SupervisorOvertimeApplicants'
 
-// HR
+// RR.HH.
 import HRDashboard from './pages/hr/HRDashboard'
 import HREmployeeManagement from './pages/hr/HREmployeeManagement'
+import HRShiftDetails from './pages/hr/HRShiftDetails'
 import HRComplaints from './pages/hr/HRComplaints'
 import HRPermissions from './pages/hr/HRPermissions'
 import HRReports from './pages/hr/HRReports'
@@ -26,9 +29,10 @@ import HRReports from './pages/hr/HRReports'
 function App() {
   return (
     <Routes>
+      {/* Login */}
       <Route path="/" element={<LoginPage />} />
 
-      {/* Worker routes */}
+      {/* Dashboard Trabajador */}
       <Route path="/dashboard/worker" element={<WorkerDashboard />}>
         <Route index element={<WorkerCalendar />} />
         <Route path="calendar" element={<WorkerCalendar />} />
@@ -38,7 +42,7 @@ function App() {
         <Route path="complaint" element={<WorkerComplaint />} />
       </Route>
 
-      {/* Supervisor routes */}
+      {/* Dashboard Supervisor */}
       <Route path="/dashboard/supervisor" element={<SupervisorEmployeeList />} />
       <Route
         path="/dashboard/supervisor/employees/:id/calendar"
@@ -53,16 +57,17 @@ function App() {
         element={<SupervisorOvertimeApplicants />}
       />
 
-      {/* HR routes */}
+      {/* Dashboard RR.HH. */}
       <Route path="/dashboard/hr" element={<HRDashboard />}>
         <Route index element={<Navigate to="employees" replace />} />
         <Route path="employees" element={<HREmployeeManagement />} />
+        <Route path="employees/:id/shifts" element={<HRShiftDetails />} />
         <Route path="complaints" element={<HRComplaints />} />
         <Route path="permissions" element={<HRPermissions />} />
         <Route path="reports" element={<HRReports />} />
       </Route>
 
-      {/* Catch-all */}
+      {/* Catch-all redirige al login */}
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   )

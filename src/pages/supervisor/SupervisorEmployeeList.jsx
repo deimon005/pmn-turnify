@@ -1,38 +1,44 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import './Supervisor.css'
+import './SupervisorList.css'
 
 const SupervisorEmployeeList = () => {
   const navigate = useNavigate()
   const empleados = [
-    { id: 1, name: 'Ana Pérez' },
-    { id: 2, name: 'Luis Gómez' },
-    { id: 3, name: 'María Ruiz' },
+    { id: 1, name: 'Ana Pérez', role: 'Trabajador' },
+    { id: 2, name: 'Luis Gómez', role: 'Trabajador' },
+    { id: 3, name: 'María Ruiz', role: 'Trabajador' },
+    { id: 4, name: 'Carlos Díaz', role: 'Trabajador' },
   ]
+
   return (
-    <div className="supervisor-container">
-      <header>
-        <h1>Supervisor – Mi Plantilla</h1>
+    <div className="supervisor-list-container">
+      <header className="supervisor-list-header">
+        <h1>Mi Plantilla</h1>
+        <button
+          className="logout-btn"
+          onClick={() => navigate('/')}
+        >
+          Cerrar Sesión
+        </button>
       </header>
-      <ul className="employee-list">
+      <div className="employee-cards">
         {empleados.map(emp => (
-          <li key={emp.id}>
-            {emp.name}
+          <div key={emp.id} className="employee-card">
+            <div className="emp-info">
+              <h2>{emp.name}</h2>
+              <p>{emp.role}</p>
+            </div>
             <button
               onClick={() =>
-                navigate(
-                  `/dashboard/supervisor/employees/${emp.id}/calendar`
-                )
+                navigate(`/dashboard/supervisor/employees/${emp.id}/calendar`)
               }
             >
               Ver Calendario
             </button>
-          </li>
+          </div>
         ))}
-      </ul>
-      <button className="logout-btn" onClick={() => navigate('/')}>
-        Cerrar Sesión
-      </button>
+      </div>
     </div>
   )
 }

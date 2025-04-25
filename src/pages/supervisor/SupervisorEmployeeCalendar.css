@@ -1,0 +1,90 @@
+.supervisor-cal-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  .supervisor-cal-container header h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  .supervisor-calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+  }
+  .calendar-header {
+    font-weight: bold;
+    text-align: center;
+    padding: 0.3rem 0;
+    background: #ecf0f1;
+    border-radius: 4px;
+  }
+  .supervisor-day {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: transform 0.1s;
+  }
+  .supervisor-day:hover {
+    transform: scale(1.05);
+  }
+  .modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-content {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 6px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  .action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+  .action-buttons button {
+    padding: 0.6rem;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .action-buttons button:nth-child(1) { background: #27ae60; }
+  .action-buttons button:nth-child(2) { background: #c0392b; }
+  .action-buttons button:nth-child(3) { background: #2980b9; }
+  .action-buttons button:nth-child(4) { background: #f1c40f; color: #333; }
+  .close-btn {
+    margin-top: 0.5rem;
+    background: #7f8c8d;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .back-btn {
+    display: block;
+    margin: 1.5rem auto 0;
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

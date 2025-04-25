@@ -1,0 +1,47 @@
+.hr-shifts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .hr-shifts-header h1 {
+    color: #2c3e50;
+  }
+  .logout-btn {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .hr-page-container section {
+    margin-top: 1.5rem;
+  }
+  .hr-page-container h2 {
+    margin-bottom: 0.5rem;
+    color: #34495e;
+  }
+  .hr-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+  }
+  .hr-table th,
+  .hr-table td {
+    border: 1px solid #ddd;
+    padding: 0.6rem;
+  }
+  .hr-table th {
+    background: #ecf0f1;
+  }
+  .action-btn {
+    margin-right: 0.4rem;
+    padding: 0.3rem 0.6rem;
+    border: none;
+    border-radius: 4px;
+    background: #3498db;
+    color: #fff;
+    cursor: pointer;
+  }
+  

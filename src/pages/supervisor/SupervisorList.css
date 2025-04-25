@@ -1,0 +1,63 @@
+.supervisor-list-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  .supervisor-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  .supervisor-list-header h1 {
+    color: #2c3e50;
+  }
+  .logout-btn {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .logout-btn:hover {
+    background: #c0392b;
+  }
+  /* resto de estilos igual… */
+  .employee-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2rem;
+  }
+  .employee-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .emp-info h2 {
+    margin: 0.5rem 0 0.2rem;
+    color: #34495e;
+  }
+  .emp-info p {
+    margin: 0;
+    color: #7f8c8d;
+  }
+  .employee-card button {
+    margin-top: 1rem;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .employee-card button:hover {
+    background: #2980b9;
+  }
+  
