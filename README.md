@@ -1,4 +1,4 @@
-# Mi-App-Horarios
+# Turnify
 
 **Producto Mínimo Navegable (PMN)** para la gestión de turnos en una empresa de construcción. Demostración de flujo y UX sin lógica de negocio ni persistencia (todos los datos son “placeholders”).
 
