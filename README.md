@@ -1,14 +1,29 @@
-# Avance del PMN - Turnify
+# Mi-App-Horarios
 
-■ React + Vite
+**Producto Mínimo Navegable (PMN)** para la gestión de turnos en una empresa de construcción. Demostración de flujo y UX sin lógica de negocio ni persistencia (todos los datos son “placeholders”).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🔍 Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este prototipo está dividido en tres dashboards según rol:
 
-■ Expanding the ESLint configuration
+- **Trabajador**  
+  - Calendario de sólo lectura (días marcados por supervisor).  
+  - Solicitud de permisos y quejas con feedback.  
+  - Gestión de horas extra (Tomar/Reservar con toast).  
+  - Intercambio de turnos (Subir/Solicitar con toast).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate Typescript and ['typescript-eslint'](https://typescript-eslint.io) in your project.
+- **Supervisor de Obra**  
+  - Vista de plantilla de empleados en tarjetas.  
+  - Calendario editable (Presente, Falta, Justificado, Añadir Turno).  
+  - Publicación y seguimiento de horas extra.
+
+- **Recursos Humanos**  
+  - Gestión de empleados y “Ver Turnos”.  
+  - Detalle de turnos regulares y horas extra (Aprobar/Negar).  
+  - Seguimiento de quejas (Ver detalle, Marcar Resuelta).  
+  - Gestión de permisos (Aprobar/Negar).  
+  - Reportes generales (tarjetas y tabla de estadísticas).
+
+> **Nota:** El login por rol (radio buttons) es un atajo para evitar un sistema de autenticación real y backend. Todos los datos se manejan en memoria con React `useState` y arrays estáticos.
